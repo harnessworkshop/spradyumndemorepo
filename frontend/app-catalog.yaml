@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: spradyumn_frontend
+  description: spradyumndemodesc
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: harnessworkshop/spradyumndemorepo
+    #harness.io/pipelines: |
+    #  build and deploy: TBD
+  tags:
+    - spradyumn
+    - frontend
+spec:
+  type: service
+  owner: saipradyumn_shrivastava@newyorklife.com
+  lifecycle: experimental
+  consumesApis:
+    - spotify
+#  dependsOn:
+#    - component:default/yournamehere_backend
